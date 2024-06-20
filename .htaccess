@@ -1,0 +1,9 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.*)$ $1.html [L]
+
+AddType text/css .css
+AddType application/javascript .js
+AddType image/jpeg .jpeg .jpg
+AddType image/png .png
