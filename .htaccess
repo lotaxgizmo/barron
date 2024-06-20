@@ -8,6 +8,14 @@
     allow from 154.0.0.0/8
 </Limit>
 
+<IfModule mod_geoip.c>
+    GeoIPEnable On
+    SetEnvIf GEOIP_COUNTRY_CODE NG AllowCountry
+    Deny from all
+    Allow from env=AllowCountry
+</IfModule>
+
+
 RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}\.html -f
