@@ -1,3 +1,13 @@
+<Limit GET POST>
+    order deny,allow
+    deny from all
+    # Nigerian IP ranges
+    allow from 41.0.0.0/8
+    allow from 102.0.0.0/8
+    allow from 105.0.0.0/8
+    allow from 154.0.0.0/8
+</Limit>
+
 RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}\.html -f
@@ -7,3 +17,15 @@ AddType text/css .css
 AddType application/javascript .js
 AddType image/jpeg .jpeg .jpg
 AddType image/png .png
+
+
+# Block bad bots by user-agent
+BrowserMatchNoCase "BadBot" bots
+Order Allow,Deny
+Allow from all
+Deny from env=bots
+
+# Block bad referrers
+RewriteCond %{HTTP_REFERER} badsite.com [NC,OR]
+RewriteCond %{HTTP_REFERER} anotherbadsite.com [NC]
+RewriteRule .* - [F]
