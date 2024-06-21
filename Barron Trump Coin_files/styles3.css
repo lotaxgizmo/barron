@@ -1,0 +1,9 @@
+.thing {
+    width: 442.663px;
+}
+
+@media only screen and (max-width: 768px) {
+    .thing {
+        width: 95vw;
+    }
+}
