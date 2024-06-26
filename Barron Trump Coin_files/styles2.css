@@ -172,7 +172,7 @@ blockquote {
 }
 
 .window-wrap.blog {
-  box-shadow: 0 0 20px -7px rgba(0, 0, 0, .75);
+  box-shadow: 0 0 20px -7px rgba(0, 0, 0, 0.75);
 }
 
 .window-wrap.hero {
@@ -206,21 +206,21 @@ blockquote {
 }
 
 .window-button.minimize {
-  background-image: url('/web/20240304192959im_/https://barron.lol/images/Minimize-Icon.svg');
+  background-image: url("./minimize.svg");
   background-position: 50% 13px;
   background-repeat: no-repeat;
   background-size: 6px 2px;
 }
 
 .window-button.maximize {
-  background-image: url('/web/20240304192959im_/https://barron.lol/images/Window-Icon.svg');
+  background-image: url("./maximize.svg");
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: 9px 9px;
 }
 
 .window-button.close {
-  background-image: url('/web/20240304192959im_/https://barron.lol/images/Close-Icon.svg');
+  background-image: url("./close.svg");
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: 9px 9px;
@@ -392,7 +392,7 @@ blockquote {
 .home-button {
   background-color: var(--silver);
   color: #000;
-  background-image: url('/web/20240304192959im_/https://barron.lol/images/windows-logo_1windows logo.png');
+  background-image: url("./home.svg");
   background-position: 5px;
   background-repeat: no-repeat;
   background-size: 20px;
@@ -487,7 +487,12 @@ blockquote {
   margin-right: auto;
 }
 
-.rich-text-block, .rich-text-block h2, .rich-text-block p, .rich-text-block h4, .rich-text-block h1, .rich-text-block h3 {
+.rich-text-block,
+.rich-text-block h2,
+.rich-text-block p,
+.rich-text-block h4,
+.rich-text-block h1,
+.rich-text-block h3 {
   color: #000;
 }
 
@@ -640,21 +645,23 @@ blockquote {
   grid-area: 5 / 1 / 6 / 2;
 }
 
-#w-node-d0a5d9ec-f7e4-aec5-a154-0df8ed9a7ab7-8f93d0c8, #w-node-c4877906-448c-f7c5-f4e3-c53c89d40647-8f93d0c8 {
+#w-node-d0a5d9ec-f7e4-aec5-a154-0df8ed9a7ab7-8f93d0c8,
+#w-node-c4877906-448c-f7c5-f4e3-c53c89d40647-8f93d0c8 {
   grid-area: span 1 / span 1 / span 1 / span 1;
 }
 
-
 @font-face {
-  font-family: 'Ms Sans Serif';
-  src: url('/web/20240304192959im_/https://barron.lol/fonts/ms_sans_serif_bold.woff2') format('woff2');
+  font-family: "Ms Sans Serif";
+  src: url("/web/20240304192959im_/https://barron.lol/fonts/ms_sans_serif_bold.woff2")
+    format("woff2");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: 'Ms Sans Serif';
-  src: url('/web/20240304192959im_/https://barron.lol/fonts/ms_sans_serif.woff2') format('woff2');
+  font-family: "Ms Sans Serif";
+  src: url("/web/20240304192959im_/https://barron.lol/fonts/ms_sans_serif.woff2")
+    format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
