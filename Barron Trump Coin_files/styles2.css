@@ -207,23 +207,23 @@ blockquote {
 
 .window-button.minimize {
   background-image: url("./minimize.svg");
-  background-position: 50% 13px;
+  background-position: 50% 7px;
   background-repeat: no-repeat;
-  background-size: 6px 2px;
+  background-size: 6px 14px;
 }
 
 .window-button.maximize {
   background-image: url("./maximize.svg");
   background-position: 50%;
   background-repeat: no-repeat;
-  background-size: 9px 9px;
+  background-size: 14px 14px;
 }
 
 .window-button.close {
   background-image: url("./close.svg");
   background-position: 50%;
   background-repeat: no-repeat;
-  background-size: 9px 9px;
+  background-size: 12px 12px;
 }
 
 .title-block {
@@ -395,7 +395,7 @@ blockquote {
   background-image: url("./home.svg");
   background-position: 5px;
   background-repeat: no-repeat;
-  background-size: 20px;
+  background-size: 15px;
   padding: 2px 4px 2px 30px;
   font-family: Ms Sans Serif, sans-serif;
 }
